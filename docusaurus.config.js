@@ -15,6 +15,7 @@ const config = {
   favicon: "img/favicon.ico",
   organizationName: "HeStudy", // Usually your GitHub org/user name.
   projectName: "d3-learning-record", // Usually your repo name.
+  trailingSlash: false,
 
   presets: [
     [
@@ -25,7 +26,7 @@ const config = {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+            "https://github.com/1467602180/d3-learning-record/tree/master/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
