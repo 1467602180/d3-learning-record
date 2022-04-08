@@ -8,7 +8,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
   title: "D3js学习记录",
   tagline: "全中文记录我的D3学习过程和实例",
-  url: "https://d3.hestudy.cn",
+  url: "https://1467602180.github.io/d3-learning-record",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
