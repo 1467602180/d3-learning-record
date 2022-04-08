@@ -9,7 +9,7 @@ const config = {
   title: "D3js学习记录",
   tagline: "全中文记录我的D3学习过程和实例",
   url: "https://1467602180.github.io",
-  baseUrl: "/",
+  baseUrl: "/d3-learning-record/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
