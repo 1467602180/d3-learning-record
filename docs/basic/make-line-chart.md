@@ -1,5 +1,15 @@
-import React, { useEffect, useRef } from "react";
-import * as d3 from "d3";
+---
+title: 绘制简单的折线图
+order: 2
+group:
+  title: 入门
+---
+
+# 绘制简单的折线图
+
+```tsx
+import React, { useEffect, useRef } from 'react';
+import * as d3 from 'd3';
 
 const BasicLineChart = () => {
   const ref = useRef<HTMLDivElement | null>(null);
@@ -28,36 +38,36 @@ const BasicLineChart = () => {
 
     // 定义折线图svg
     const svg = d3
-      .create("svg")
-      .style("width", "100%")
+      .create('svg')
+      .style('width', '100%')
       // 转换成常见的笛卡尔坐标
-      .attr("transform", "scale(1,-1)");
+      .attr('transform', 'scale(1,-1)');
 
     // 生成折线图
     svg
-      .selectAll("line")
+      .selectAll('line')
       // 绑定数据
       .data(data)
       // 遍历数据插入line
-      .join("line")
-      .attr("x1", (d) => {
+      .join('line')
+      .attr('x1', (d) => {
         return d.x;
       })
-      .attr("y1", (d) => d.y)
+      .attr('y1', (d) => d.y)
       // 获取横线的下一坐标点
-      .attr("x2", (datum, index) => {
+      .attr('x2', (datum, index) => {
         if (data[index + 1]) {
           return data[index + 1].x;
         }
         return datum.x;
       })
-      .attr("y2", (datum, index) => {
+      .attr('y2', (datum, index) => {
         if (data[index + 1]) {
           return data[index + 1].y;
         }
         return datum.y;
       })
-      .attr("stroke", "#2e8555");
+      .attr('stroke', '#2e8555');
     ref.current.appendChild(svg.node());
   }, []);
 
@@ -65,3 +75,4 @@ const BasicLineChart = () => {
 };
 
 export default BasicLineChart;
+```

@@ -1,41 +1,21 @@
-# Website
+# dumi app
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+## Getting Started
 
-### Installation
+Install dependencies,
 
-```
-$ yarn
-```
-
-### Local Development
-
-```
-$ yarn start
+```bash
+$ npm i
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+Start the dev server,
 
-### Build
-
-```
-$ yarn build
+```bash
+$ npm start
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+Build site app,
 
-### Deployment
-
-Using SSH:
-
+```bash
+$ npm run build
 ```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
