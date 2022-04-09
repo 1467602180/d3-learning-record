@@ -4,6 +4,7 @@ export default defineConfig({
   title: 'D3js学习记录',
   mode: 'site',
   base: '/d3-learning-record/',
+  publicPath: './',
   navs: [
     null,
     {
