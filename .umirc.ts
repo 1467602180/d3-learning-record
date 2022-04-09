@@ -4,7 +4,8 @@ export default defineConfig({
   title: 'D3js学习记录',
   mode: 'site',
   base: '/d3-learning-record/',
-  publicPath: './',
+  publicPath:
+    process.env.NODE_ENV === 'production' ? '/d3-learning-record/' : '/',
   navs: [
     null,
     {
